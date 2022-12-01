@@ -6,11 +6,10 @@
 
 body {
     text-align: center;
-    margin-top: 20%;
 }
 
 #baloons {
-    animation: baloon 1s linear 1s infinite normal forwards;
+    animation: baloon 3s linear 1s infinite normal forwards;
 }
 
 @keyframes baloon {
@@ -18,12 +17,13 @@ body {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-100px);
+        transform: translateY(-250px);
     }
 }
 
 #girls {
-    animation: girls 1s ease-in-out alternate;
+    animation: girls 3s alternate;
+    transform-origin: top;
 }
 
 @keyframes girls {
@@ -31,6 +31,6 @@ body {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-40px);
+        transform: translateY(-20px);
     }
 }
