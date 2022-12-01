@@ -3,3 +3,34 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    text-align: center;
+    margin-top: 20%;
+}
+
+#baloons {
+    animation: baloon 1s linear 1s infinite normal forwards;
+}
+
+@keyframes baloon {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100px);
+    }
+}
+
+#girls {
+    animation: girls 1s ease-in-out alternate;
+}
+
+@keyframes girls {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
+}
